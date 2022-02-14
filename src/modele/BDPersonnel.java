@@ -37,7 +37,16 @@ public class BDPersonnel {
     }
 
     public int connexionPersonnel(String login,String mdp){
-        return 0;
+        Personnel personnel;
+        int idPersonnel=-1;
+        for( int i : listePersonnel.keySet()){
+            personnel=listePersonnel.get(i);
+            if(personnel.verifierCorrespondanceProfil(login,mdp)){
+                personnel.connexionProfil();
+                idPersonnel=i;
+            }
+        }
+        return idPersonnel;
     }
 
 
