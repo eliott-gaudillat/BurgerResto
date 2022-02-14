@@ -16,7 +16,6 @@ public class Personnel extends Profil {
         return " Personnel [" +
                 "gerant=" + gerant +","+
                 super.toString()+
-                "connecte"+
                 ']';
     }
 }

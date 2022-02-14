@@ -36,5 +36,9 @@ public class BDPersonnel {
                 ']';
     }
 
+    public int connexionPersonnel(String login,String mdp){
+        return 0;
+    }
+
 
 }
