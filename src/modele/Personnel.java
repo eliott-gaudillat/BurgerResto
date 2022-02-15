@@ -11,6 +11,10 @@ public class Personnel extends Profil {
         this.gerant=true;
     }
 
+    public boolean isGerant(){
+        return gerant;
+    }
+
     @Override
     public String toString() {
         return " Personnel [" +

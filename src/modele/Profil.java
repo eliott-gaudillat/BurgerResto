@@ -29,4 +29,8 @@ public abstract class Profil {
     public void connexionProfil(){
         connecte=true;
     }
+
+    public boolean isConnecte(){
+        return connecte;
+    }
 }

@@ -49,5 +49,10 @@ public class BDPersonnel {
         return idPersonnel;
     }
 
+    public Personnel trouverPersonnel(int numeroPersonnel){
+        Personnel personnel= listePersonnel.get(numeroPersonnel);
+        return personnel;
+    }
+
 
 }

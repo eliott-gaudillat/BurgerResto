@@ -46,4 +46,9 @@ public class BDClient {
         }
         return idClient;
     }
+
+    public Client trouverClient(int numeroClient){
+        Client client = listeclient.get(numeroClient);
+        return client;
+    }
 }
