@@ -13,4 +13,6 @@ public abstract class Aliment {
                 "nom=" + nom +
                 ']';
     }
+
+    public String getNom(){return this.nom;};
 }

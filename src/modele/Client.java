@@ -2,7 +2,7 @@ package modele;
 
 public class Client extends Profil{
 
-    private CarteBancaire carteBancaire;
+    private CarteBancaire carteBancaire=null;
 
     public Client(String nom, String prenom, String mdp){
         super(nom,prenom,mdp);
@@ -11,6 +11,8 @@ public class Client extends Profil{
     public void enregistrerCoordonneesBancaires(int numeroCarte,int dateCarte){
         this.carteBancaire = new CarteBancaire(numeroCarte,dateCarte);
     }
+
+    public boolean verifierExistanceCarteBancaire(){return carteBancaire!=null;}
 
     @Override
     public String toString() {
