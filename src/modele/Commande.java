@@ -20,4 +20,28 @@ public class Commande {
     public int getNumeroCommandeAttribuee() {
         return numeroCommandeAttribuee;
     }
+    public int getNumClient() {
+        return numClient;
+    }
+
+    public Hamburger getHamburger() {
+        return hamburger;
+    }
+
+    public Accompagnement getAccompagnement() {
+        return accompagnement;
+    }
+
+    public Boisson getBoisson() {
+        return boisson;
+    }
+
+    public static int getNumeroCommande() {
+        return numeroCommande;
+    }
+
+    public static void initialiseNumeroCommande(){
+        numeroCommande = 0;
+    }
+
 }
