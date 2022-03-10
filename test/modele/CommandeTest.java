@@ -4,10 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CommandeTest {
-    private Hamburger hamburger = new Hamburger("Royal Deluxe");
+    private Hamburger hamburger = new Hamburger("RoyalDeluxe");
     private  Accompagnement accompagnement = new Accompagnement("pommeNoissette");
     private  Boisson boisson= new Boisson("San Pellegrino");
     private Commande commande;
