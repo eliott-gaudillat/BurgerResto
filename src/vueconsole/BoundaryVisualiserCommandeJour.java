@@ -32,6 +32,9 @@ public class BoundaryVisualiserCommandeJour implements PropertyChangeListener {
                 Fichier.ecrire("commande n° : "+numeroCommande + " ; hamburger : " + hamburger +
                         "; accompagnement : " +accompagnement + "; boisson : " + boisson);
                 break;
+            case VIDER_COMMANDE_JOUR:
+                Fichier.effacer();
+                break;
         }
 
     }
@@ -39,6 +42,7 @@ public class BoundaryVisualiserCommandeJour implements PropertyChangeListener {
     public void visualiserCommandeJour(int numeroCuisinier){
         if(controlVisualiserCommandeJour.verifierIdentification(numeroCuisinier, ProfilUtilisateur.PERSONNEL)){
             this.controlVisualiserCommandeJour.setListener(PropertyName.ENREGISTRER_COMMANDE.toString(), this);
+            this.controlVisualiserCommandeJour.setListener(PropertyName.VIDER_COMMANDE_JOUR.toString(),this);
         }
     }
 

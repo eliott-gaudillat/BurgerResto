@@ -1,17 +1,10 @@
 package testconsole;
 
 
-import controleur.ControlAjouterAlimentMenu;
-import controleur.ControlCommander;
-import controleur.ControlCreerProfil;
-import controleur.ControlEnregistrerCoordonneesBancaires;
-import controleur.ControlSIdentifier;
-import controleur.ControlVerifierCoordonneesBancaires;
-import controleur.ControlVerifierIdentification;
-import controleur.ControlVisualiserCommandeJour;
+import controleur.*;
 import modele.AlimentMenu;
 import modele.ProfilUtilisateur;
-//import modele.ThreadViderCommandeJour;
+import modele.ThreadViderCommandeJour;
 import vueconsole.BoundaryCommander;
 import vueconsole.BoundaryEnregistrerCoordonneesBancaires;
 import vueconsole.BoundaryVisualiserCommandeJour;
@@ -68,8 +61,8 @@ public class TestVisualiserCommandeJour {
 		boundaryVisualiserCommandeJour.visualiserCommandeJour(numCuisinier2);
 
         // Thread
-//		ThreadViderCommandeJour threadViderCommande = new ThreadViderCommandeJour();
-//		threadViderCommande.start();
+		ThreadViderCommandeJour threadViderCommande = new ThreadViderCommandeJour();
+		threadViderCommande.start();
 
         //Lancement du test
         System.out.println("\nCommande client 1");

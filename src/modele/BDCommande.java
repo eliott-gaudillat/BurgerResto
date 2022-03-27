@@ -45,4 +45,9 @@ public class BDCommande {
         support.addPropertyChangeListener(propertyName, listener);
 
     }
+     public void viderCommandeJour(){
+        mapCommandes.clear();
+        Commande.initialiseNumeroCommande();
+        support.firePropertyChange(PropertyName.VIDER_COMMANDE_JOUR.toString(),null,null);
+     }
 }
